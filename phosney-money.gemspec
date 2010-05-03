@@ -29,6 +29,7 @@ Gem::Specification.new do |s|
      "lib/money/core_extensions.rb",
      "lib/money/rails.rb",
      "lib/support/cattr_accessor.rb",
+     "phosney-money.gemspec",
      "test/helper.rb",
      "test/test_money.rb"
   ]
