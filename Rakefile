@@ -4,13 +4,15 @@ require 'rake'
 begin
   require 'jeweler'
   Jeweler::Tasks.new do |gem|
-    gem.name = "money"
-    gem.summary = %Q{TODO: one-line summary of your gem}
-    gem.description = %Q{TODO: longer description of your gem}
+    gem.name = "phosney-money"
+    gem.summary = %Q{Class aiding in the handling of Money.}
+    gem.description = %Q{Class aiding in the handling of Money and Currencies. It supports easy pluggable bank objects for customized exchange strategies. Can be used as composite in ActiveRecord tables.}
     gem.email = "ishmael@blackbalto.com"
     gem.homepage = "http://github.com/ishmael/money"
-    gem.authors = ["ishmael"]
+    gem.authors = ["Manuel Silva"]
     gem.add_development_dependency "thoughtbot-shoulda", ">= 0"
+    gem.files.include 'lib/**/*.rb'
+    #gem.files = FileList['lib/**/*.rb']
     # gem is a Gem::Specification... see http://www.rubygems.org/read/chapter/20 for additional settings
   end
   Jeweler::GemcutterTasks.new
